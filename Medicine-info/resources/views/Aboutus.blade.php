@@ -122,7 +122,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-push-6 animate-box">
-					<img class="img-responsive about-img" src="images/staff/3.jpg" alt="">
+					<img class="img-responsive about-img" src="images/about.jpg" alt="">
 				</div>
 				<div class="col-md-6 col-md-pull-6 animate-box">
 					<h2>About Medicine Info</h2>
