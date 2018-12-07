@@ -115,14 +115,14 @@
 			   		</div>
 		   		</div>
 		   	</li>
-		   	<li style="background-image: url(images/img_bg_5.jpg);">
+		   	<li style="">
 		   		<div class="overlay"></div>
 		   		<div class="container">
 		   			<div class="row">
 			   			<div class="col-md-8 col-md-offset-2 col-md-pull-2 slider-text">
 			   				<div class="slider-text-inner">
 			   					<h1>We help you <strong>to know the best medicine for you!</strong></h1>
-									<h2>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</h2>
+									<h2></h2>
 									<p><a class="btn btn-primary btn-lg btn-learn" href="#">Go to Information</a></p>
 			   				</div>
 			   			</div>
@@ -170,7 +170,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-push-6 animate-box">
-					<img class="img-responsive about-img" src="images/about.png" alt="">
+					<img class="img-responsive about-img" src="" alt="">
 				</div>
 				<div class="col-md-6 col-md-pull-6 animate-box">
 					<h2>About Medicine Info</h2>
@@ -260,14 +260,14 @@
 										<span class="icon text-center"><i class="flaticon-healthy-1"></i></span>
 										<div class="desc">
 											<h3>Qualified Doctors</h3>
-											<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. </p>
+											<p></p>
 										</div>
 									</div>
 									<div class="features animate-box">
 										<span class="icon text-center"><i class="flaticon-stethoscope"></i></span>
 										<div class="desc">
 											<h3>Free Consultation</h3>
-											<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. </p>
+											<p></p>
 										</div>
 									</div>
 								</div>
@@ -276,16 +276,16 @@
 										<span class="icon text-center"><i class="flaticon-medical-1"></i></span>
 										<div class="desc">
 											<h3>Online Enrollment</h3>
-											<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. </p>
+											<p></p>
 										</div>
 									</div>
-									<div class="features animate-box">
+									<!--<div class="features animate-box">
 										<span class="icon text-center"><i class="flaticon-radiation"></i></span>
 										<div class="desc">
 											<h3>Modern Facilities</h3>
-											<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. </p>
+											<p>A smal</p>
 										</div>
-									</div>
+									</div>-->
 								</div>
 							</div>
 						</div>
@@ -341,9 +341,9 @@
 						<div class="item">
 							<div class="testimony">
 								<span class="img-user" style="background-image: url(images/person1.jpg);"></span>
-								<span class="user">Ronald Duck</span>
+								<span class="user">Thanos</span>
 								<blockquote>
-									<p>"Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar."</p>
+									<p>"5/5 should try it"</p>
 									<p class="color"><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span></p>
 								</blockquote>
 							</div>
@@ -351,9 +351,9 @@
 						<div class="item">
 							<div class="testimony">
 								<span class="img-user" style="background-image: url(images/person2.jpg);"></span>
-								<span class="user">Justine Mill</span>
+								<span class="user">Anonymous</span>
 								<blockquote>
-									<p>"Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar."</p>
+									<p>"Definitely the best medicine website i ever see"</p>
 									<p class="color"><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span></p>
 								</blockquote>
 							</div>
@@ -385,11 +385,8 @@
 						<p>
 							<ul class="colorlib-footer-links">
 								<li><a href="#">Home</a></li>
-								<li><a href="#">Departments</a></li>
-								<li><a href="#">Doctors</a></li>
-								<li><a href="#">Services</a></li>
-								<li><a href="#">News</a></li>
-								<li><a href="#">Contact</a></li>
+								<li><a href="#">Medicine Info</a></li>
+								<li><a href="#">About Us</a></li>
 							</ul>
 						</p>
 					</div>
@@ -420,10 +417,10 @@
 		<div class="row copyright">
 			<div class="col-md-12 text-center">
 				<p>
-					<small class="block">&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small> 
-					<small class="block">Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a> , <a href="https://www.pexels.com/" target="_blank">Pexels</a></small>
+				<!--	<small class="block">&copy;  Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <!--| This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small>  
+					<!--<small class="block">Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a> , <a href="https://www.pexels.com/" target="_blank">Pexels</a></small>-->
 				</p>
 			</div>
 		</div>

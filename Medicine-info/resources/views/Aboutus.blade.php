@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Healthcare Template</title>
+	<title>About Us</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
@@ -70,7 +70,7 @@
 								<div class="col-md-3">
 									<div class="loc">
 										<span class="icon"><i class="icon-location"></i></span>
-										<p><a href="#">88 Route West 21th Street, Suite 721 New York NY 10016</a></p>
+										<p><a href="#">asdasdasd</a></p>
 									</div>
 								</div>
 							</div>
@@ -122,7 +122,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-push-6 animate-box">
-					<img class="img-responsive about-img" src="images/about.jpg" alt="">
+					<img class="img-responsive about-img" src="" alt="">
 				</div>
 				<div class="col-md-6 col-md-pull-6 animate-box">
 					<h2>About Medicine Info</h2>
@@ -212,8 +212,8 @@
 							<div class="doctor">
 								<div class="staff-img" style="background-image: url(images/staff/1.jpg);"></div>
 								<div class="desc">
-									<span>Dental Hygienist</span>
-									<h3><a href="#">Dr. Kevin Leonardo</a></h3>
+									<span></span>
+									<h3><a href="#">Kevin Leonardo</a></h3>
 									<ul class="colorlib-social">
 										<li><a href="#"><i class="icon-facebook2"></i></a></li>
 										<li><a href="#"><i class="icon-twitter2"></i></a></li>
@@ -227,8 +227,8 @@
 							<div class="doctor">
 								<div class="staff-img" style="background-image: url(images/staff/2.jpg);"></div>
 								<div class="desc">
-									<span>Dental Hygienist</span>
-									<h3><a href="#">Dr. Willson Frederico</a></h3>
+									<span></span>
+									<h3><a href="#">Wilson Frederico</a></h3>
 									<ul class="colorlib-social">
 										<li><a href="#"><i class="icon-facebook2"></i></a></li>
 										<li><a href="#"><i class="icon-twitter2"></i></a></li>
@@ -242,8 +242,8 @@
 							<div class="doctor">
 								<div class="staff-img" style="background-image: url(images/staff/3.jpg);"></div>
 								<div class="desc">
-									<span>Orthopedic Surgeon</span>
-									<h3><a href="#">Dr. Audia Lavena</a></h3>
+									<span></span>
+									<h3><a href="#">Audia Lavena</a></h3>
 									<ul class="colorlib-social">
 										<li><a href="#"><i class="icon-facebook2"></i></a></li>
 										<li><a href="#"><i class="icon-twitter2"></i></a></li>
@@ -257,8 +257,8 @@
 							<div class="doctor">
 								<div class="staff-img" style="background-image: url(images/staff/4.jpg);"></div>
 								<div class="desc">
-									<span>Health Care</span>
-									<h3><a href="#">Dr. Enrico Hasnawi</a></h3>
+									<span></span>
+									<h3><a href="#">Enrico Hasnawi</a></h3>
 									<ul class="colorlib-social">
 										<li><a href="#"><i class="icon-facebook2"></i></a></li>
 										<li><a href="#"><i class="icon-twitter2"></i></a></li>
@@ -270,10 +270,10 @@
 						</div>
 						<div class="col-md-3 col-sm-6 col-xs-12 animate-box text-center">
 							<div class="doctor">
-								<div class="staff-img" style="background-image: url(images/staff-1.jpg);"></div>
+								<div class="staff-img"></div>
 								<div class="desc">
-									<span>Patient Services Manager</span>
-									<h3><a href="#">Dr. Liza Thomas</a></h3>
+									<span></span>
+									<h3><a href="#">Mariati</a></h3>
 									<ul class="colorlib-social">
 										<li><a href="#"><i class="icon-facebook2"></i></a></li>
 										<li><a href="#"><i class="icon-twitter2"></i></a></li>
@@ -308,10 +308,8 @@
 						<p>
 							<ul class="colorlib-footer-links">
 								<li><a href="#">Home</a></li>
-								
-								<li><a href="#">Medicine info</a></li>
-								
-								<li><a href="#">Contact</a></li>
+								<li><a href="#">Medicine Info</a></li>
+								<li><a href="#">About Us</a></li>
 							</ul>
 						</p>
 					</div>
@@ -342,14 +340,43 @@
 		<div class="row copyright">
 			<div class="col-md-12 text-center">
 				<p>
-					<small class="block">&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small> 
-					<small class="block">Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a> , <a href="https://www.pexels.com/" target="_blank">Pexels</a></small>
+				<!--	<small class="block">&copy;  Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <!--| This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small>  
+					<!--<small class="block">Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a> , <a href="https://www.pexels.com/" target="_blank">Pexels</a></small>-->
 				</p>
 			</div>
 		</div>
 	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Sticky Kit -->
+	<script src="js/sticky-kit.min.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
 	</div>
 
 	<div class="gototop js-top">
