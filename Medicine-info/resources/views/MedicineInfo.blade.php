@@ -128,7 +128,7 @@
 			</tr>
 			@foreach($drug as $d)
 			<tr>
-				<td><img width="50px" height="50px" src="{{url($d->ImageUrl)}}" style="margin-right:4px; margin-top:4px; margin-down:4px;"></td>
+				<td><img width="50px" height="50px" src="imgDrugs/{{url($d->ImageUrl)}}" style="margin-right:4px; margin-top:4px; margin-down:4px;"></td>
 				<td>{{$d->Name}}</td>
 				<td>{{$d->Desc}}</td>
 				<td>{{$d->Brand}}</td>
