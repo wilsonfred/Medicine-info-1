@@ -4,13 +4,12 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Medicine-Info</title>
+	<title>Home - MedicineInfo</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	<meta name="author" content="" />
 
-  <!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
 	<meta property="og:image" content=""/>
 	<meta property="og:url" content=""/>
@@ -22,31 +21,18 @@
 	<meta name="twitter:card" content="" />
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-	
-	<!-- Animate.css -->
+
 	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
-	<!-- Owl Carousel  -->
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<!-- Flexslider  -->
 	<link rel="stylesheet" href="css/flexslider.css">
-	<!-- Flaticons  -->
 	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
-
-	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+
 
 	</head>
 	<body>
@@ -89,7 +75,9 @@
 									
 									<li><a href="/MedicineInfo">Medicine Info</a></li>
 									
-									<li><a href="/Aboutus">Contact</a></li>
+									<li><a href="/Aboutus">About Us</a></li>
+
+									<li><a href="/ViewCompareDrug">Compare Drug</a></li>
 								</div>
 								</ul>
 							</div>
@@ -122,7 +110,7 @@
 			   			<div class="col-md-8 col-md-offset-2 col-md-pull-2 slider-text">
 			   				<div class="slider-text-inner">
 			   					<h1>We help you <strong>to know the best medicine for you!</strong></h1>
-									<h2></h2>
+									<h2>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</h2>
 									<p><a class="btn btn-primary btn-lg btn-learn" href="#">Go to Information</a></p>
 			   				</div>
 			   			</div>
@@ -259,15 +247,15 @@
 									<div class="features animate-box">
 										<span class="icon text-center"><i class="flaticon-healthy-1"></i></span>
 										<div class="desc">
-											<h3>Qualified Doctors</h3>
-											<p></p>
+											<h3>100% Accurate</h3>
+											<p> </p>
 										</div>
 									</div>
 									<div class="features animate-box">
 										<span class="icon text-center"><i class="flaticon-stethoscope"></i></span>
 										<div class="desc">
-											<h3>Free Consultation</h3>
-											<p></p>
+											<h3>Easy to Use</h3>
+											<p> </p>
 										</div>
 									</div>
 								</div>
@@ -275,17 +263,10 @@
 									<div class="features animate-box">
 										<span class="icon text-center"><i class="flaticon-medical-1"></i></span>
 										<div class="desc">
-											<h3>Online Enrollment</h3>
-											<p></p>
+											<h3>Comparison Feature</h3>
+											<p> </p>
 										</div>
 									</div>
-									<!--<div class="features animate-box">
-										<span class="icon text-center"><i class="flaticon-radiation"></i></span>
-										<div class="desc">
-											<h3>Modern Facilities</h3>
-											<p>A smal</p>
-										</div>
-									</div>-->
 								</div>
 							</div>
 						</div>
@@ -310,8 +291,8 @@
 					<div class="owl-carousel">
 						<div class="item">
 							<div class="testimony">
-								<span class="img-user" style="background-image: url(images/person1.jpg);"></span>
-								<span class="user">Katili Jiwo</span>
+								<span class="img-user" style="background-image: url(images/staff/2.jpg);"></span>
+								<span class="user">Testimonial 1</span>
 								<blockquote>
 									<p>"When i confuse about what medicine to eat, i try to search google and nothings found. Luckily i found this website and it's help me a lot. Thankyou Medicine-Info!"</p>
 									<p class="color"><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span></p>
@@ -320,8 +301,8 @@
 						</div>
 						<div class="item">
 							<div class="testimony">
-								<span class="img-user" style="background-image: url(images/person2.jpg);"></span>
-								<span class="user">Myself</span>
+								<span class="img-user" style="background-image: url(images/staff/3.jpg);"></span>
+								<span class="user">Testimonial 2</span>
 								<blockquote>
 									<p>"Now i dont need to worry about false compsumtion on medicine. With this website now i know what medicine to eat and the doses . Thankyou Medicine-Info"</p>
 									<p class="color"><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span></p>
@@ -330,8 +311,8 @@
 						</div>
 						<div class="item">
 							<div class="testimony">
-								<span class="img-user" style="background-image: url(images/person3.jpg);"></span>
-								<span class="user">Seseorang</span>
+								<span class="img-user" style="background-image: url(images/staff/4.jpg);"></span>
+								<span class="user">Testimonial 3</span>
 								<blockquote>
 									<p>"Medicine info provide all the info i need about medicine . Thanks Medicine-info!."</p>
 									<p class="color"><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span></p>
@@ -340,20 +321,30 @@
 						</div>
 						<div class="item">
 							<div class="testimony">
-								<span class="img-user" style="background-image: url(images/person1.jpg);"></span>
-								<span class="user">Thanos</span>
+								<span class="img-user" style="background-image: url(images/staff/1.jpg);"></span>
+								<span class="user">Testimonial 4</span>
 								<blockquote>
-									<p>"5/5 should try it"</p>
+									<p>"10/10 should try it. Really Helpful"</p>
 									<p class="color"><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span></p>
 								</blockquote>
 							</div>
 						</div>
 						<div class="item">
 							<div class="testimony">
-								<span class="img-user" style="background-image: url(images/person2.jpg);"></span>
-								<span class="user">Anonymous</span>
+								<span class="img-user" style="background-image: url(images/staff/5.jpg);"></span>
+								<span class="user">Testimonial 5</span>
 								<blockquote>
-									<p>"Definitely the best medicine website i ever see"</p>
+									<p>"This is the place i need . It has all the medicine information from all around the world. 5 stars!"</p>
+									<p class="color"><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span></p>
+								</blockquote>
+							</div>
+						</div>
+							<div class="item">
+							<div class="testimony">
+								<span class="img-user" style="background-image: url(images/staff/6.jpg);"></span>
+								<span class="user">Testimonial 6	</span>
+								<blockquote>
+									<p>"Never seen such a good Information website like this!"</p>
 									<p class="color"><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span><span><i class="icon-star3"></i></span></p>
 								</blockquote>
 							</div>
@@ -417,9 +408,9 @@
 		<div class="row copyright">
 			<div class="col-md-12 text-center">
 				<p>
-				<!--	<small class="block">&copy;  Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <!--| This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small>  
+					<small class="block">&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <!--| This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small> 
 					<!--<small class="block">Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a> , <a href="https://www.pexels.com/" target="_blank">Pexels</a></small>-->
 				</p>
 			</div>
@@ -431,28 +422,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
 	
-	<!-- jQuery -->
+	
 	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
 	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
 	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
 	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Stellar Parallax -->
 	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Carousel -->
 	<script src="js/owl.carousel.min.js"></script>
-	<!-- Flexslider -->
 	<script src="js/jquery.flexslider-min.js"></script>
-	<!-- countTo -->
 	<script src="js/jquery.countTo.js"></script>
-	<!-- Magnific Popup -->
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/magnific-popup-options.js"></script>
-	<!-- Sticky Kit -->
 	<script src="js/sticky-kit.min.js"></script>
-	<!-- Main -->
 	<script src="js/main.js"></script>
 
 	</body>

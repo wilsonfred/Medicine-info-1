@@ -26,4 +26,11 @@ class MedicineInfoController extends Controller
         return view('Detail',compact('drug'));
     }
 
+    public function ifBlade()
+    {
+        //validasi bila name, avgPrice, dan radiobutton harus diisi
+
+        $isShow = 'true';
+        return view('compare',compact('isShow'));
+    }
 }
