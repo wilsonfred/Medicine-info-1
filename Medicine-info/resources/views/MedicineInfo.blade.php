@@ -53,6 +53,25 @@
             width:150px;
             height:150px;
         }
+
+		table
+		{
+			border-color:white;
+			table.fixed  { table-layout:fixed; }
+			table.fixed td { overflow: hidden; }
+			
+		}
+		th{
+			border-color:white;
+			width:20px;
+		}
+		td
+		{
+			border-color:white;
+			padding-bottom:20px;
+			padding-top:10px;
+			padding-right:10px;
+		}
     </style>
 
 	</head>
@@ -117,7 +136,9 @@
 		<br>
 		<br>
 		
-		<table style="width:90%;">
+		<table class="fixed" border="1" style="width:90%;" >
+		
+	
 			<tr>
 				<th>Medicine</th>
 				<th>Name</th>
@@ -128,6 +149,13 @@
 				<th>Detail</th>
 			</tr>
 			@foreach($drug as $d)
+			<col width="10%" />    
+			<col width="10%" />    
+			<col width="50%" />
+			<col width="10%" />
+			<col width="10%" />    
+			<col width="10%" />    
+			<col width="10%" />
 			<tr>
 				<td><img width="50px" height="50px" src="{{url($d->ImageUrl)}}" style="margin-right:4px; margin-top:4px; margin-down:4px;"></td>
 				<td>{{$d->Name}}</td>
@@ -137,6 +165,7 @@
 				<td>{{$d->AvgPrice}}</td>
 				<td><a href="{{url('/doDetail/'.$d->Id)}}">Detail</a></td>
 			</tr>
+			
 			@endforeach
 		</table>
 

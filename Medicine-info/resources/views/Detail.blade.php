@@ -48,51 +48,50 @@
 <body>
 
     <nav class="colorlib-nav" role="navigation">
-		<div class="top-menu">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12">
-						<div class="top">
-							<div class="row">
-								<div class="col-md-6">
-									<div id="colorlib-logo"><a href="index.html">Medicine<span>Info</span></a></div>
-								</div>
-								<div class="col-md-3">
-									<div class="num">
-										<span class="icon"><i class="icon-phone"></i></span>
-										<p><a href="#">111-222-333</a><br><a href="#">99-222-333</a></p>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="loc">
-										<span class="icon"><i class="icon-location"></i></span>
-										<p><a href="#">asdasdasd</a></p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="menu-wrap">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-8">
-							<div class="menu-1">
-								<ul>
-									<li><a href="/">Home</a></li>
-									
-									<li><a href="/MedicineInfo">Medicine Info</a></li>
-									<li><a href="/Aboutus">Contact</a></li>
-									<li><a href="/ViewCompareDrug">Compare Drug</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</nav>
+        <div class="top-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="top">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div id="colorlib-logo"><a href="index.html">Medicine<span>Info</span></a></div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="num">
+                                        <span class="icon"><i class="icon-phone"></i></span>
+                                        <p><a href="#">111-222-333</a><br><a href="#">99-222-333</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="loc">
+                                        <span class="icon"><i class="icon-location"></i></span>
+                                        <p><a href="#">88 Route West 21th Street, Suite 721 New York NY 10016</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <div class="menu-1">
+                                <ul>
+                                    <li><a href="/">Home</a></li>
+                                    
+                                    <li><a href="/MedicineInfo">Medicine Info</a></li>
+                                    <li><a href="/Aboutus">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
     
     <div style=" margin-left:13%; margin-top:0.5%;">
         <div>
