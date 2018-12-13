@@ -23,6 +23,13 @@ Route::get('/MedicineInfo', function(){
     return view('MedicineInfo');
 });
 
+Route::get('/ViewCompareDrug', function(){
+    $isShow = 'false';
+    return view('Compare', compact('isShow'));
+});
+
+Route::get('/ReturnCompareDrug', 'MedicineInfoController@ifblade');
+
 Route::get('/MedicineInfo','MedicineInfoController@ShowData');
 
 Route::get('/doSearch','MedicineInfoController@searchProduct');

@@ -93,8 +93,9 @@
 								<ul>
 									<li><a href="/">Home</a></li>
 									
-									<li><a href="/MedicineInfo">Medicine Info</a></li>
+									<li class="active"><a href="/MedicineInfo">Medicine Info</a></li>
 									<li><a href="/Aboutus">Contact</a></li>
+									<li><a href="/ViewCompareDrug">Compare Drug</a></li>
 								</ul>
 							</div>
 						</div>
