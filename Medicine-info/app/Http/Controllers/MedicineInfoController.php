@@ -20,17 +20,33 @@ class MedicineInfoController extends Controller
         return view('MedicineInfo',compact('drug'));
     }
 
+    public function compareProduct(Request $request)
+    {   
+        $drug = Drug::where('Name','LIKE','%'.$request->search.'%')->paginate(4);
+        $isShow = 'true';
+
+        $result = compact('drug','isShow');
+
+        //dd($result);
+
+        return view('Compare',compact('result'));
+    }
+
     public function ShowDetail($Id)
     {
         $drug = Drug::find($Id);
         return view('Detail',compact('drug'));
     }
 
-    public function ifBlade()
+    public function ifBlade(Request $request)
     {
         //validasi bila name, avgPrice, dan radiobutton harus diisi
 
+        $drug = Drug::where('Name','LIKE','%'.$request->search.'%')->paginate(8);
         $isShow = 'true';
-        return view('compare',compact('isShow'));
+
+        $result = compact('drug','isShow');
+        
+        return view('compare',compact('result'));
     }
 }

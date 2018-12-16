@@ -110,26 +110,58 @@
                 <td style="padding-right:50%; display:inline;"> 
                     <div id="firstDrug">
                         <h3>First Drug</h3>
-                        <input type="search" name="" id="srcDrug1" placeholder="Name"> <br> <br>
                     </div>
-                    <br>
-                    <form action="/ReturnCompareDrug">
+                    <!-- <form action="/ReturnCompareDrug">
                         <button href="/ReturnCompareDrug">Search</button>
-                    </form>
+                    </form> -->
+					
+					<form action="{{ url('/doCompare') }}" method="GET">
+						<div style="float:right; margin-right:12%;">
+							<input type="search" name="search" id="srcDrug1" placeholder="Search By Name">
+							<input type="submit" value="Search">
+						</div>
+					</form>
                     <br>
-
                 </td>
                 <td style="">
-
-                    @if($isShow == 'false')
+					
+                    @if($result['isShow'] == 'false')
                         Please Choose the Drug
-                    @elseif($isShow == 'true')
-                        
-                        <div>
-                            <h2>Nama Obat</h2>
-                            <img src="images/blog-1.jpg" alt="">
-                            <p>Description</p>
-                        </div>
+                    @elseif($result['isShow'] == 'true')
+						<table class="fixed" border="1" style="width:90%;" >
+							<tr>
+								<th>Medicine</th>
+								<th>Name</th>
+								<th>Description</th>
+								<th>Brand</th>
+								<th>Drug Type</th>
+								<th>Avg Price</th>
+								<th>Detail</th>
+							</tr>
+							@foreach($result['drug'] as $d)
+							<col width="10%" />    
+							<col width="10%" />    
+							<col width="50%" />
+							<col width="10%" />
+							<col width="10%" />    
+							<col width="10%" />    
+							<col width="10%" />
+							<tr>
+								<td><img width="50px" height="50px" src="{{url($d->ImageUrl)}}" style="margin-right:4px; margin-top:4px; margin-down:4px;"></td>
+								<td>{{$d->Name}}</td>
+								<td>{{$d->Desc}}</td>
+								<td>{{$d->Brand}}</td>
+								<td>{{$d->Type}}</td>
+								<td>{{$d->AvgPrice}}</td>
+								<td><a href="{{url('/doDetail/'.$d->Id)}}">Detail</a></td>
+							</tr>
+							
+							@endforeach
+						</table>
+
+						<p>
+							{{ $result['drug']->appends(['search'=>request()->search])->links() }}
+						</p>
 
                     @endif
 

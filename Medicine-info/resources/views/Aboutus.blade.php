@@ -3,11 +3,11 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<<<<<<< HEAD
+
 	<title>About US-MedicineInfo</title>
-=======
+	
 	<title>About us</title>
->>>>>>> 7127da94504ae52e1f58e8c2006000bbebbcf0f6
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
