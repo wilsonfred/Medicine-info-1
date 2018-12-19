@@ -20,33 +20,56 @@ class MedicineInfoController extends Controller
         return view('MedicineInfo',compact('drug'));
     }
 
-    public function compareProduct(Request $request)
-    {   
-        $drug = Drug::where('Name','LIKE','%'.$request->search.'%')->paginate(4);
-        $isShow = 'true';
-
-        $result = compact('drug','isShow');
-
-        //dd($result);
-
-        return view('Compare',compact('result'));
-    }
-
     public function ShowDetail($Id)
     {
         $drug = Drug::find($Id);
         return view('Detail',compact('drug'));
     }
 
-    public function ifBlade(Request $request)
-    {
-        //validasi bila name, avgPrice, dan radiobutton harus diisi
+    //tidak dipakai
+    public function compareProduct($isShow,$isShow2, Request $request)
+    {   
+        //echo 'jiwo';
 
-        $drug = Drug::where('Name','LIKE','%'.$request->search.'%')->paginate(8);
-        $isShow = 'true';
+        $drug = Drug::where('Name','LIKE','%'.$request->search.'%')->paginate(4);
+        $isShow = 'newisShow';
 
         $result = compact('drug','isShow');
+        $result2 = compact('isShow2');
+
+        //dd($isShow2);
+
+        return view('Compare',compact('result'),compact('result2'));
+    }
+
+    //tidak dipakai
+    public function compareProduct2($isShow,$isShow2, Request $request)
+    {   
+        // echo 'jiwo';
+        $drug2 = Drug::where('Name','LIKE','%'.$request->search.'%')->paginate(4);
+        $isShow2 = 'newisShow2';
+ 
+        $result2 = compact('drug2','isShow2');
+        $result = compact('isShow');
+            
+        //dd($isShow);
+
+        return view('Compare',compact('result'),compact('result2'));
+    }
+
+    public function newCompareProduct(Request $request)
+    {
+        parse_str($_SERVER['QUERY_STRING'], $queries);
+        $firstQuery = $queries['search1'];
+        $secondQuery = $queries['search2'];
+        $isShow = 'true';
         
-        return view('compare',compact('result'));
+        $drug1 = Drug::where('Name','LIKE','%'.$firstQuery.'%')->paginate(1);
+        $drug2 = Drug::where('Name','LIKE','%'.$secondQuery.'%')->paginate(1);
+
+        $toReturn = compact('drug1','drug2');
+        //dd($toReturn);
+
+        return view('newCompare',compact('isShow'), compact('toReturn'));
     }
 }

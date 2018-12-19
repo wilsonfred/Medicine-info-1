@@ -113,7 +113,7 @@
 									<li><a href="/">Home</a></li>
 									
 									<li class="active"><a href="/MedicineInfo">Medicine Info</a></li>
-									<li><a href="/Aboutus">Contact</a></li>
+									<li><a href="/Aboutus">About Us</a></li>
 									<li><a href="/ViewCompareDrug">Compare Drug</a></li>
 								</ul>
 							</div>
@@ -136,7 +136,7 @@
 		<br>
 		<br>
 		
-		<table class="fixed" border="1" style="width:90%;" >
+		<table class="fixed" border="0" style="width:90%;" >
 		
 	
 			<tr>

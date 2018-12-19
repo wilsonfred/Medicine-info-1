@@ -47,6 +47,9 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+	<!-- jiwo add Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <style>
         img
         {
@@ -107,53 +110,60 @@
 
         <table style=" margin-left:9%; margin-top:0.5%;">
             <tr>
-                <td style="padding-right:50%; display:inline;"> 
+                <td style="padding-right:5%;"> 
                     <div id="firstDrug">
                         <h3>First Drug</h3>
                     </div>
                     <!-- <form action="/ReturnCompareDrug">
                         <button href="/ReturnCompareDrug">Search</button>
                     </form> -->
-					
-					<form action="{{ url('/doCompare') }}" method="GET">
+					@php($isShow = $result['isShow'] )
+
+					<form action="" method="GET" id="fCompare1">
 						<div style="float:right; margin-right:12%;">
 							<input type="search" name="search" id="srcDrug1" placeholder="Search By Name">
-							<input type="submit" value="Search">
+							<input type="submit" value="Search" id="src1" onclick="src1On_Click();">
 						</div>
 					</form>
                     <br>
                 </td>
                 <td style="">
-					
-                    @if($result['isShow'] == 'false')
+					<div id="secondDrug">
+							<h3>Second Drug</h3>
+						</div>
+						<!-- <form action="/ReturnCompareDrug">
+							<button href="/ReturnCompareDrug">Search</button>
+						</form> -->
+						@php($isShow2 = $result2['isShow2'] )
+						<form action="" method="GET" id="fCompare2">
+							<div style="float:right; margin-right:12%;">
+								<input type="search" name="search" id="srcDrug2" placeholder="Search By Name">
+								<input type="submit" value="Search" id="src2" onclick="src2On_Click();">
+							</div>
+						</form>
+						<br>
+				
+                </td>
+            </tr>
+            <tr>
+                <td>
+					@if($result['isShow'] == 'false')
                         Please Choose the Drug
-                    @elseif($result['isShow'] == 'true')
-						<table class="fixed" border="1" style="width:90%;" >
+                    @elseif($result['isShow'] == 'newisShow')
+						<table class="fixed" border="1" style="width:60%;" >
 							<tr>
 								<th>Medicine</th>
 								<th>Name</th>
 								<th>Description</th>
-								<th>Brand</th>
-								<th>Drug Type</th>
-								<th>Avg Price</th>
-								<th>Detail</th>
 							</tr>
 							@foreach($result['drug'] as $d)
+							<col width="20%" />    
 							<col width="10%" />    
-							<col width="10%" />    
-							<col width="50%" />
-							<col width="10%" />
-							<col width="10%" />    
-							<col width="10%" />    
-							<col width="10%" />
+							<col width="20%" />
 							<tr>
 								<td><img width="50px" height="50px" src="{{url($d->ImageUrl)}}" style="margin-right:4px; margin-top:4px; margin-down:4px;"></td>
 								<td>{{$d->Name}}</td>
 								<td>{{$d->Desc}}</td>
-								<td>{{$d->Brand}}</td>
-								<td>{{$d->Type}}</td>
-								<td>{{$d->AvgPrice}}</td>
-								<td><a href="{{url('/doDetail/'.$d->Id)}}">Detail</a></td>
 							</tr>
 							
 							@endforeach
@@ -162,31 +172,87 @@
 						<p>
 							{{ $result['drug']->appends(['search'=>request()->search])->links() }}
 						</p>
+					@elseif($result['isShow'] == '&quot; + newisShow + &quot;')
+						<table class="fixed" border="1" style="width:60%;" >
+							<tr>
+								<th>Medicine</th>
+								<th>Name</th>
+								<th>Description</th>
+							</tr>
+							@foreach($result['drug'] as $d)
+							<col width="20%" />    
+							<col width="10%" />    
+							<col width="20%" />
+							<tr>
+								<td><img width="50px" height="50px" src="{{url($d->ImageUrl)}}" style="margin-right:4px; margin-top:4px; margin-down:4px;"></td>
+								<td>{{$d->Name}}</td>
+								<td>{{$d->Desc}}</td>
+							</tr>
+							
+							@endforeach
+						</table>
 
-                    @endif
-
+						<p>
+							{{ $result['drug']->appends(['search'=>request()->search])->links() }}
+						</p>
+					@endif
                 </td>
-            </tr>
-            <tr>
-                <td>
-                    <div id="secondDrug">
-                        <h3>Second Drug</h3>
-                        <input type="search" name="" id="srcDrug2" placeholder="Name"> <br> <br>
-                    </div>
-                    <br>
-                    <form action="/ReturnCompareDrug">
-                        <button href="/ReturnCompareDrug">Search</button>
-                    </form>
-                </td>
                 <td>
 
-                    //ini isinya
+				
+				@if($result2['isShow2'] == 'false')
+					Please Choose the Drug
+				@elseif($result2['isShow2'] == 'newisShow2')
+					<table class="fixed" border="1" style="width:60%;" >
+						<tr>
+							<th>Medicine</th>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+						@foreach($result2['drug2'] as $d2)
+						<col width="20%" />    
+						<col width="10%" />    
+						<col width="20%" />
+						<tr>
+							<td><img width="50px" height="50px" src="{{url($d2->ImageUrl)}}" style="margin-right:4px; margin-top:4px; margin-down:4px;"></td>
+							<td>{{$d2->Name}}</td>
+							<td>{{$d2->Desc}}</td>
+						</tr>
+						
+						@endforeach
+					</table>
+
+					<p>
+						{{ $result2['drug2']->appends(['search'=>request()->search])->links() }}
+					</p>
+				@elseif($result['isShow'] == '&quot; + newisShow2 + &quot;')
+					<table class="fixed" border="1" style="width:60%;" >
+						<tr>
+							<th>Medicine</th>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+						@foreach($result2['drug2'] as $d2)
+						<col width="20%" />    
+						<col width="10%" />    
+						<col width="20%" />
+						<tr>
+							<td><img width="50px" height="50px" src="{{url($d2->ImageUrl)}}" style="margin-right:4px; margin-top:4px; margin-down:4px;"></td>
+							<td>{{$d2->Name}}</td>
+							<td>{{$d2->Desc}}</td>
+						</tr>
+						
+						@endforeach
+					</table>
+				@endif
 
                 </td>
             </tr>
         </table>
 
         <br><br>
+
+		
 
     <footer id="colorlib-footer" role="contentinfo">
 		<div class="overlay"></div>
@@ -276,6 +342,43 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="js/sticky-kit.min.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
+	
+	<script type="text/javascript">
+
+	var isShow = "<?php Print($result['isShow']); ?>";
+	var isShow2 = "<?php Print($result2['isShow2']); ?>";
+
+	var newisShow = isShow.replace("&quot; +","").replace("+ &quot;", "");
+	var newisShow2 = isShow2.replace("&quot; +","").replace("+ &quot;", "");
+	
+	//alert("ini isShow2 : " + isShow2 + " ini newisShow2 : " + newisShow2);
+	
+    window.onload = function() {
+		// document.getElementById('fCompare1').action = "{{ url('/doCompare/$isShow') }}"; //Will set it
+		// document.getElementById('fCompare2').action = "url('/doCompare/$isShow2') }}"; //Will set it
+		//  var isShow = "<?php Print($result['isShow']); ?>";
+		//  var isShow2 = "<?php Print($result2['isShow2']); ?>";
+
+		// // alert(isShow + " " +isShow2);
+
+		// $('#fCompare1').attr('action', '{{ url('/doCompare/isShow/isShow2') }}');
+		// $('#fCompare2').attr('action', '{{ url('/doCompare2/isShow/isShow2') }}');
+	}
+
+	function src1On_Click()
+	{
+		//var src2 = document.getElementById("srcDrug2").value;
+		$('#fCompare1').attr("action", "{{ url('/doCompare/" + newisShow + "/" + newisShow2 + "/" + src2 "') }}");
+		alert(src2);
+	}
+
+	function src2On_Click()
+	{
+		//var src1 = document.getElementById("srcDrug1").value;
+		$('#fCompare2').attr("action", "{{ url('/doCompare2/" + newisShow + "/" + newisShow2 + "/" + src1 "') }}");
+	}
+
+</script>
 
 </body>
 </html>

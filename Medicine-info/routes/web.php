@@ -23,18 +23,15 @@ Route::get('/MedicineInfo', function(){
     return view('MedicineInfo');
 });
 
-//buat pertama kali load biar di hidden si result compare drugnya
+//Jiwo,Ubah cara compare drug 19 des 2018
 Route::get('/ViewCompareDrug', function(){
+
     $isShow = 'false';
-    $result = compact('isShow');
-
     //jiwo 16 des 2018, sampai sini, Bingung sama compact(result)
-
-    //dd($result);
-    return view('Compare',compact('result'));
+    return view('newCompare',compact('isShow'));
 });
 
-Route::get('/ReturnCompareDrug', 'MedicineInfoController@ifblade');
+//Route::get('/ReturnCompareDrug', 'MedicineInfoController@ifblade');
 
 Route::get('/MedicineInfo','MedicineInfoController@ShowData');
 
@@ -42,5 +39,11 @@ Route::get('/doSearch','MedicineInfoController@searchProduct');
 
 Route::get('/doDetail/{id}','MedicineInfoController@ShowDetail');
 
-Route::get('/doCompare','MedicineInfoController@compareProduct');
+//pengganti doCompare
+Route::get('newCompare/','MedicineInfoController@newCompareProduct');
+
+//dua dibawah ini tidak berguna
+Route::get('/doCompare/{isShow}/{isShow2}/{src2}','MedicineInfoController@compareProduct');
+
+Route::get('/doCompare2/{isShow}/{isShow2}/{src1}','MedicineInfoController@compareProduct2');
 
