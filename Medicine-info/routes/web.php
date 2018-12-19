@@ -43,7 +43,7 @@ Route::get('/doDetail/{id}','MedicineInfoController@ShowDetail');
 Route::get('newCompare/','MedicineInfoController@newCompareProduct');
 
 //dua dibawah ini tidak berguna
-Route::get('/doCompare/{isShow}/{isShow2}/{src2}','MedicineInfoController@compareProduct');
+// Route::get('/doCompare/{isShow}/{isShow2}/{src2}','MedicineInfoController@compareProduct');
 
-Route::get('/doCompare2/{isShow}/{isShow2}/{src1}','MedicineInfoController@compareProduct2');
+// Route::get('/doCompare2/{isShow}/{isShow2}/{src1}','MedicineInfoController@compareProduct2');
 
