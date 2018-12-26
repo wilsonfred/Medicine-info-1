@@ -120,14 +120,16 @@
                             </td>
                             <td>
                                 <h3>First Drug</h3>
-                                <input type="search" name="search1" id="srcDrug1" placeholder="Search By Name">
+                                <input type="search" name="search1" id="srcDrug1" placeholder="Search By Name" class="form-control">
+
+                              
                             </td>
                             <td>
                                 <h3>Second Drug</h3>
-                                <input type="search" name="search2" id="srcDrug2" placeholder="Search By Name">
+                                <input type="search" name="search2" id="srcDrug2" placeholder="Search By Name" class="form-control">
                             </td>
                             <td>
-                                <input type="submit" value="Search" id="src1" style="margin-top:45px;">
+                                <input type="submit" value="Search" id="src1" style="margin-top:45px;" class="btn btn-default">
                             </td>
                         </tr>
 
