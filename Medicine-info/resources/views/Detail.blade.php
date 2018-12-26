@@ -9,6 +9,10 @@
     <meta name="keywords" content="" />
     <meta name="author" content="" />
 
+    <meta charset="utf-8">
+    <title>Judul Halaman Saya</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
     
     <!-- Animate.css -->
@@ -38,80 +42,97 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
     <style>
-        body
-        {
-            font-family: 'Poppins', sans-serif;
-        }
-        img
-        {
-            width:150px;
-            height:150px;
-        }
-        td
-        {
-            padding:15px;
-            font-size:20px;
-            style="text-align: center; vertical-align: middle;"
-        }
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: white;
-            }
-
-            li {
-            float: left;
-            }
-
-            li a {
-            display: block;
-            color: #4CAF50;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size:20px;
-            }
-
-            li a:hover {
-            background-color: white;
-            color:grey;
-            }
-
-            .menu-1
-            {
-                padding-top:2%;
-                padding-bottom:2%;
-            }
-    </style>
-
+            * {margin:0; padding:0;}
+     
+     body {
+       
+     }
+      
+     .menu-wrap {
+         background-color:#53bd84; 
+         height:50px; 
+         line-height:50px; 
+         position:relative;
+         width:770px;
+         margin:auto;
+         margin-top:80px;
+     }
+      
+     .menu-wrap ul {
+         list-style:none;
+     }
+      
+     .menu-wrap ul li a {
+         float:left; 
+         width:150px; 
+         display:block; 
+         text-align:center; 
+         color:#FFF; 
+         text-decoration:none; 
+         text-transform:uppercase;
+     }
+      
+     .menu-wrap ul li a:hover {
+         background-color:#666; 
+         display:block;
+     }
+      
+     .menu-wrap ul li:hover ul {
+         display:block;
+     }
+      
+     .menu-wrap ul ul {
+         display:none; 
+         list-style:none; 
+         position:absolute; 
+         background-color:#53bd84;
+         left:300px; 
+         top:50px; 
+         width:190px;
+     }
+      
+     .menu-wrap ul ul li a {
+         float:none; 
+         display:block; 
+         padding-left:30px; 
+         text-align:left; 
+         width:160px;
+     }
+      
+     .menu-wrap ul ul li a:hover {
+         color:#fff;
+     }
+        </style>
+    
 </head>
 <body>
 
     <center>    
-    <nav class="colorlib-nav" role="navigation" >
-        <div class="menu-1">
-            <ul>
-                <li><a href="/" style="padding-left:510px;">Home</a></li>
-                
-                <li><a href="/MedicineInfo">Medicine Info</a></li>
-                <li><a href="/Aboutus">Contact</a></li>
-                <li><a href="/ViewCompareDrug" class="active">Compare Drug</a></li>
-            </ul>
-        </div>
-    </nav>
+            
+                   
+                    <div class="menu-wrap">
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/MedicineInfo">Medicine Info</a></li>
+                                <li><a href="/Aboutus">About Us</a></li>
+                                <li><a href="/ViewCompareDrug">Compare Drug</a></li>
+                                   
+                                
+                            </ul>
+                          </div>
+                  
+          
     
     <div style=" margin-left:0%; margin-top:0.5%;">
         <div>
             {{csrf_field()}}
 
             <table width="60%" height="50%" style="">
-                <tr><td style="text-align: center; vertical-align: middle;"><img width="50px" height="50px" src="{{url($drug->ImageUrl)}}" style="margin-right:4px; margin-top:0px; margin-down:4px;"> <br></td></tr>
-                <tr><td style="text-align: center; vertical-align: middle;">Drug Name : {{$drug->Name}}</td></tr>
-                <tr><td style="text-align: center; vertical-align: middle;">Distrubute by : {{$drug->Brand}}</td></tr>
-                <tr><td style="text-align: center; vertical-align: middle;">Drug Type : {{$drug->Type}}</td></tr>
-                <tr><td style="text-align: center; vertical-align: middle;">Avarage Price : {{$drug->AvgPrice}}</td></tr>
+                <tr><td style="text-align: center; vertical-align: middle;"><img width="300px" height="300px" src="{{url($drug->ImageUrl)}}" style="margin-right:4px; margin-top:0px; margin-down:4px;"> <br></td></tr>
+                <tr><td style="text-align: center; vertical-align: middle;"><h2>Drug Name : {{$drug->Name}}</h2></td></tr>
+                <tr><td style="text-align: center; vertical-align: middle;"><h4>Distrubute by : {{$drug->Brand}}</h4></td></tr>
+                <tr><td style="text-align: center; vertical-align: middle;"><h4>Drug Type : {{$drug->Type}}</h4></td></tr>
+                <tr><td style="text-align: center; vertical-align: middle;"><h4>Avarage Price : {{$drug->AvgPrice}}</h4></td></tr>
                 <tr><td style="text-align: center; vertical-align: middle;">{{$drug->General}}</td></tr>
             </table>
 
