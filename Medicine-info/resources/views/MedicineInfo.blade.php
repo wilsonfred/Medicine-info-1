@@ -127,10 +127,13 @@
 	<div style=" margin-left:9%; margin-top:0.5%;">
 		<!-- ini baru contoh nanti tolong ganti jadi foreach dari database -->
 		<form action="{{ url('/doSearch') }}" method="GET">
-			<div style="float:right; margin-right:12%;">
-				<input type="search" name="search" id="sSearch" placeholder="Search By Name">
-				<input type="submit" value="Search">
+			<div style="float:right; margin-right:10%;"><input type="submit" value="Search" class="btn btn-default"></div>
+			<div style="float:right; margin-right:2%;">
+				<input type="search" name="search" id="sSearch" placeholder="Search By Name"  class="form-control" >
+				
 			</div>
+			<br>
+			
 		</form>
 
 		<br>
