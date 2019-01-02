@@ -105,7 +105,7 @@
 			   			<div class="col-md-8 col-md-offset-2 col-md-pull-2 slider-text">
 			   				<div class="slider-text-inner">
 			   					<h1><strong>About Us</strong></h1>
-									
+								<h2>Please let us show who we are and introduce our members!</h2>
 			   				</div>
 			   			</div>
 			   		</div>

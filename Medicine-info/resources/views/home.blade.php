@@ -103,7 +103,7 @@
 			   		</div>
 		   		</div>
 		   	</li>
-		   	<li style="">
+		   	<li style="background-image: url(images/img_bg_6.jpg);">
 		   		<div class="overlay"></div>
 		   		<div class="container">
 		   			<div class="row">
