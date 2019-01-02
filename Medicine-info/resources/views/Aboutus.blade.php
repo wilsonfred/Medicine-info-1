@@ -65,7 +65,7 @@
 								<div class="col-md-3">
 									<div class="loc">
 										<span class="icon"><i class="icon-location"></i></span>
-										<p><a href="#">asdasdasd</a></p>
+										<p><a href="#">Medicine Info Tower</a></p>
 									</div>
 								</div>
 							</div>
@@ -120,12 +120,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-push-6 animate-box">
-					<img class="img-responsive about-img" src="" alt="">
+					<img class="img-responsive about-img" src="images/img_bg_7.jpg" alt="">
 				</div>
 				<div class="col-md-6 col-md-pull-6 animate-box">
 					<h2>About Medicine Info</h2>
 					<p>
-						Medicine Info is the website that show all the medicine you need. Medicine info is blabalbalbalbalbalbal
+						Medicine Info is the website that show all the medicine you need. We provide you all exhaustive information about your medicines written by our verified medical experts.
 					</p>
 						<div class="fancy-collapse-panel">
                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">

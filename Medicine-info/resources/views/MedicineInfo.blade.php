@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -96,7 +97,7 @@
 								<div class="col-md-3">
 									<div class="loc">
 										<span class="icon"><i class="icon-location"></i></span>
-										<p><a href="#">88 Route West 21th Street, Suite 721 New York NY 10016</a></p>
+										<p><a href="#">Medicine Info Tower</a></p>
 									</div>
 								</div>
 							</div>
