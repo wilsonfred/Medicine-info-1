@@ -83,6 +83,16 @@ class MedicineInfoController extends Controller
             $isShow = 'false';
             return view('newCompare',compact('isShow'));
         }
+        else if($drug1 == null)
+        {
+            $isShow = 'miss';
+            return view('newCompare',compact('isShow'));
+        }
+        else if($drug2 == null)
+        {
+            $isShow = 'miss';
+            return view('newCompare',compact('isShow'));
+        }
         else
         {
             return view('newCompare',compact('isShow'), compact('toReturn'));

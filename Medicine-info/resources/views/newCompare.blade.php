@@ -129,7 +129,7 @@
                                 <input type="search" name="search2" id="srcDrug2" placeholder="Search By Name" class="form-control">
                             </td>
                             <td>
-                                <input type="submit" value="Search" id="src1" style="margin-top:45px;" class="btn btn-default">
+                                <input type="submit" value="Compare" id="src1" style="margin-top:45px;" class="btn btn-default">
                             </td>
                         </tr>
 
@@ -137,6 +137,11 @@
                         <tr>
                         <td></td>
                             <td>Nothing to show</td>
+                        </tr>
+                        @elseif($isShow == 'miss')
+                        <tr>
+                        <td></td>
+                            <td>Please fill both input</td>
                         </tr>
                         @else
                         <tr>
