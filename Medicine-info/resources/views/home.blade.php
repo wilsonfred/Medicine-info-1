@@ -51,7 +51,7 @@
 								<div class="col-md-3">
 									<div class="num">
 										<span class="icon"><i class="icon-phone"></i></span>
-										<p><a href="#">081230129</a><br><a href="#">08213921</a></p>
+										<p><a href="#">+62-11-2222-3333</a><br><a href="#">+62-22-1111-2222</a></p>
 									</div>
 								</div>
 								<div class="col-md-3">
@@ -365,7 +365,7 @@
 						<h3>Head Office</h3>
 						<ul class="colorlib-footer-links">
 							<li>asdasdasd<br>asdasdasd</li>
-							<li><a href="tel://1234567920"><i class="icon-phone"></i> + 01234567890</a></li>
+							<li><a href="tel://1234567920"><i class="icon-phone"></i>+62-11-2222-3333</a></li>
 							<li><a href="mailto:info@yoursite.com"><i class="icon-mail"></i> medicineinfo@gmail.com</a></li>
 							
 						</ul>

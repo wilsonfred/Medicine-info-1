@@ -91,7 +91,7 @@
 								<div class="col-md-3">
 									<div class="num">
 										<span class="icon"><i class="icon-phone"></i></span>
-										<p><a href="#">111-222-333</a><br><a href="#">99-222-333</a></p>
+										<p><a href="#">+62-11-2222-3333</a><br><a href="#">+62-22-1111-2222</a></p>
 									</div>
 								</div>
 								<div class="col-md-3">

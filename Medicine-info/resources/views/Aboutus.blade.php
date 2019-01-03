@@ -58,8 +58,8 @@
 								<div class="col-md-3">
 									<div class="num">
 										<span class="icon"><i class="icon-phone"></i></span>
-										<p><a href="#">081230129
-</a><br><a href="#">08213921</a></p>
+										<p><a href="#">+62-11-2222-3333
+</a><br><a href="#">+62-22-1111-2222</a></p>
 									</div>
 								</div>
 								<div class="col-md-3">
@@ -106,6 +106,7 @@
 			   				<div class="slider-text-inner">
 			   					<h1><strong>About Us</strong></h1>
 								<h2>Please let us show who we are and introduce our members!</h2>
+								<h6>The MedicineInfo covers comprehensive products,including medical electronic products,medical imaging equipment,ward nursing and auxiliary equipment,medical supplies and hygienic materials, testing equipment and diagnostic reagents, optical products, first aid products, rehabilitation nursing products, as well as health information  technology, providing direct and comprehensive service to the medical devices industry,from the source to the terminal,covering the entire medical industrial chain. Every year,over 1000 medical  devices  manufacturers from over 20 countries and 40,000 person-times of governmental purchasing personnel,hospital buyers and dealers from over 30 countries and regions in the world gather at MedicineInfo for trade and communication; as the area of the  exhibition is  expanding,  the number of foreign  exhibitors is increasing and the number of visitors is increasing year by year.</h6>
 			   				</div>
 			   			</div>
 			   		</div>
@@ -310,7 +311,7 @@
 						<h3>Head Office</h3>
 						<ul class="colorlib-footer-links">
 							<li>asdasdasd<br>asdasdasd</li>
-							<li><a href="tel://1234567920"><i class="icon-phone"></i> + 01234567890</a></li>
+							<li><a href="tel://1234567920"><i class="icon-phone"></i>+62-11-2222-3333</a></li>
 							<li><a href="mailto:info@yoursite.com"><i class="icon-mail"></i> medicineinfo@gmail.com</a></li>
 							
 						</ul>
