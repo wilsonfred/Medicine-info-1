@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Drug;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use Validator;
 
@@ -57,19 +58,35 @@ class MedicineInfoController extends Controller
     //     return view('Compare',compact('result'),compact('result2'));
     // }
 
-    public function newCompareProduct(Request $request)
+    public function newCompareProduct()
     {
         parse_str($_SERVER['QUERY_STRING'], $queries);
         $firstQuery = $queries['search1'];
         $secondQuery = $queries['search2'];
         $isShow = 'true';
         
-        $drug1 = Drug::where('Name','LIKE','%'.$firstQuery.'%')->paginate(1);
-        $drug2 = Drug::where('Name','LIKE','%'.$secondQuery.'%')->paginate(1);
+        $drug1 = Drug::where('Name','LIKE','%'.$firstQuery.'%')->first();
+        $drug2 = Drug::where('Name','LIKE','%'.$secondQuery.'%')->first();
+
+        if($drug1 == null)
+            $drug1 = Drug::where('Name','LIKE',$firstQuery)->first();
+            //$drug1 = DB::table('Drugs')->where('Name', $firstQuery)->first();
+        if($drug2 == null)
+            $drug2 = Drug::where('Name','LIKE',$secondQuery)->first();
+
+        
 
         $toReturn = compact('drug1','drug2');
         //dd($toReturn);
-
-        return view('newCompare',compact('isShow'), compact('toReturn'));
+        if($drug1 == null && $drug2 == null)
+        {
+            $isShow = 'false';
+            return view('newCompare',compact('isShow'));
+        }
+        else
+        {
+            return view('newCompare',compact('isShow'), compact('toReturn'));
+        }
+        
     }
 }

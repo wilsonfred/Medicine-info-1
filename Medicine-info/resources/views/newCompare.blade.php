@@ -133,44 +133,42 @@
                             </td>
                         </tr>
 
-                        @if($isShow == 'false' )
-                            
+                        @if($isShow == 'false')
+                        <tr>
+                        <td></td>
+                            <td>Nothing to show</td>
+                        </tr>
                         @else
-
-                        @foreach($toReturn['drug1'] as $d)
-                        @foreach($toReturn['drug2'] as $d2)
                         <tr>
                             <td>Image</td>
-                            <td><img width="50px" height="50px" src="{{url($d->ImageUrl)}}" style="margin-right:4px; margin-top:4px; margin-down:4px;"></td>
-                            <td><img width="50px" height="50px" src="{{url($d2->ImageUrl)}}" style="margin-right:4px; margin-top:4px; margin-down:4px;"></td>
+                            <td><img width="50px" height="50px" src="{{url($toReturn['drug1']['ImageUrl'])}}" style="margin-right:4px; margin-top:4px; margin-down:4px;"></td>
+                            <td><img width="50px" height="50px" src="{{url($toReturn['drug2']['ImageUrl'])}}" style="margin-right:4px; margin-top:4px; margin-down:4px;"></td>
                         </tr>
                         <tr>
                             <td>Name</td>
-                            <td>{{$d->Name}}</td>
-                            <td>{{$d2->Name}}</td>
+                            <td>{{$toReturn['drug1']['Name']}}</td>
+                            <td>{{$toReturn['drug2']['Name']}}</td>
                         </tr>
                         <tr>
                             <td>Brand</td>
-                            <td>{{$d->Brand}}</td>
-                            <td>{{$d2->Brand}}</td>
+                            <td>{{$toReturn['drug1']['Brand']}}</td>
+                            <td>{{$toReturn['drug2']['Brand']}}</td>
                         </tr>
                         <tr>
                             <td>Type</td>
-                            <td>{{$d->Type}}</td>
-                            <td>{{$d2->Type}}</td>
+                            <td>{{$toReturn['drug1']['Type']}}</td>
+                            <td>{{$toReturn['drug2']['Type']}}</td>
                         </tr>
                         <tr>
                             <td>Avarage Price</td>
-                            <td>{{$d->AvgPrice}}</td>
-                            <td>{{$d2->AvgPrice}}</td>
+                            <td>{{$toReturn['drug1']['AvgPrice']}}</td>
+                            <td>{{$toReturn['drug2']['AvgPrice']}}</td>
                         </tr>
                         <tr> 
                             <td>Description</td>
-                            <td>{{$d->Desc}}</td>
-                            <td>{{$d2->Desc}}</td>
+                            <td>{{$toReturn['drug1']['Desc']}}</td>
+                            <td>{{$toReturn['drug2']['Desc']}}</td>
                         </tr>
-                        @endforeach
-                        @endforeach
                             
                         @endif
                             
