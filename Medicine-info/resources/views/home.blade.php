@@ -46,7 +46,7 @@
 						<div class="top">
 							<div class="row">
 								<div class="col-md-6">
-									<div id="colorlib-logo"><a href="index.html">Medicine<span>Info</span></a></div>
+									<div id="colorlib-logo"><a href="/">Medicine<span>Info</span></a></div>
 								</div>
 								<div class="col-md-3">
 									<div class="num">
@@ -358,6 +358,7 @@
 
 	
 	<footer id="colorlib-footer" role="contentinfo">
+<<<<<<< HEAD
   <div class="overlay"></div>
   <div class="container">
    <div class="row row-pb-md">
@@ -381,6 +382,31 @@
        </ul>
       </p>
      </div>
+=======
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row row-pb-md">
+				<div class="col-md-3 colorlib-widget">
+						<h3>Head Office</h3>
+						<ul class="colorlib-footer-links">
+							<li>asdasdasd<br>asdasdasd</li>
+							<li><a href="tel://1234567920"><i class="icon-phone"></i>+62-11-2222-3333</a></li>
+							<li><a href="mailto:info@yoursite.com"><i class="icon-mail"></i> medicineinfo@gmail.com</a></li>
+							
+						</ul>
+					</div>
+					
+					<div class="col-md-2 colorlib-widget">
+						<h3>Useful Links</h3>
+						<p>
+							<ul class="colorlib-footer-links">
+								<li><a href="/">Home</a></li>
+								<li><a href="/MedicineInfo">Medicine Info</a></li>
+								<li><a href="/Aboutus">About Us</a></li>
+							</ul>
+						</p>
+					</div>
+>>>>>>> 69930a8a27967a6bc0047a58a10683441b9afa50
 
 
     <div class="col-md-3 colorlib-widget" style="float: right;">
