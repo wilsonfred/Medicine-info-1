@@ -55,7 +55,7 @@
          position:relative;
          width:770px;
          margin:auto;
-         margin-top:80px;
+         margin-top:70px;
      }
       
      .menu-wrap ul {
@@ -102,6 +102,11 @@
      .menu-wrap ul ul li a:hover {
          color:#fff;
      }
+
+     td
+     {
+         padding:5px;
+     }
         </style>
     
 </head>
@@ -110,16 +115,16 @@
     <center>    
             
                    
-                    <div class="menu-wrap">
-                            <ul>
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/MedicineInfo">Medicine Info</a></li>
-                                <li><a href="/Aboutus">About Us</a></li>
-                                <li><a href="/ViewCompareDrug">Compare Drug</a></li>
-                                   
-                                
-                            </ul>
-                          </div>
+        <div class="menu-wrap">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/MedicineInfo">Medicine Info</a></li>
+                    <li><a href="/Aboutus">About Us</a></li>
+                    <li><a href="/ViewCompareDrug">Compare Drug</a></li>
+                        
+                    
+                </ul>
+                </div>
                   
           
     
