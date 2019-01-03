@@ -70,7 +70,7 @@
       <div class="top">
        <div class="row">
         <div class="col-md-6">
-         <div id="colorlib-logo"><a href="index.html">Medicine<span>Info</span></a></div>
+         <div id="colorlib-logo"><a href="/">Medicine<span>Info</span></a></div>
         </div>
         <div class="col-md-3">
          <div class="num">
@@ -205,9 +205,9 @@
       <h3>Useful Links</h3>
       <p>
        <ul class="colorlib-footer-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Medicine Info</a></li>
-        <li><a href="#">About Us</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/MedicineInfo">Medicine Info</a></li>
+        <li><a href="/Aboutus">About Us</a></li>
        </ul>
       </p>
      </div>

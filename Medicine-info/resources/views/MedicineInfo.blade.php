@@ -86,7 +86,7 @@
 						<div class="top">
 							<div class="row">
 								<div class="col-md-6">
-									<div id="colorlib-logo"><a href="index.html">Medicine<span>Info</span></a></div>
+									<div id="colorlib-logo"><a href="/">Medicine<span>Info</span></a></div>
 								</div>
 								<div class="col-md-3">
 									<div class="num">
