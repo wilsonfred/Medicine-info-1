@@ -126,7 +126,7 @@
 				<div class="col-md-6 col-md-pull-6 animate-box">
 					<h2>About Medicine Info</h2>
 					<p>
-						Medicine Info is the website that show all the medicine you need. We provide you all exhaustive information about your medicines written by our verified medical experts.
+					The MedicineInfo covers comprehensive products,including medical electronic products,medical imaging equipment,ward nursing and auxiliary equipment,medical supplies and hygienic materials, testing equipment and diagnostic reagents, optical products, first aid products, rehabilitation nursing products, as well as health information  technology, providing direct and comprehensive service to the medical devices industry,from the source to the terminal,covering the entire medical industrial chain.
 					</p>
 						<div class="fancy-collapse-panel">
                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
