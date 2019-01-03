@@ -17,11 +17,11 @@ class Medic extends Migration
             $table->increments('Id');
             $table->string('Name');
             $table->string('ImageUrl');
-            $table->string('Desc');
+            $table->longtext('Desc');
             $table->string('Brand');
             $table->string('Type');
             $table->string('AvgPrice');
-            $table->string('General');
+            $table->longtext('General');
             $table->timestamps();
         });
     }
