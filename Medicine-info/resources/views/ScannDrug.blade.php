@@ -191,10 +191,19 @@
 
             Quagga.onDetected(function (result) {
                //alert("Barcode detected and processed : [" + result.codeResult.code + "]", result);
-               //window.location.href = "localhost:8000/doDetail/" + result.codeResult.code;    
-               var n ="{{URL::to('/doOriginal/"result.codeResult.code"')}}";
-               var url = n.replace('result.codeResult.code', result.codeResult.code).replace('&quot;','').replace('&quot;','');
-               window.location=url;
+               //window.location.href = "localhost:8000/doDetail/" + result.codeResult.code;
+               
+               if(result.codeResult.code < 20 && result.codeResult.code > 0)
+               {
+                //    alert('masuk');
+                    var n ="{{URL::to('/doOriginal/"result.codeResult.code"')}}";
+                    var url = n.replace('result.codeResult.code', result.codeResult.code).replace('&quot;','').replace('&quot;','');
+                    window.location=url;
+               }
+               else
+               {
+                   alert('No Record Found, Its might be your drug is not original ')
+               }
             });
         }
 
