@@ -27,6 +27,12 @@ class MedicineInfoController extends Controller
         return view('Detail',compact('drug'));
     }
 
+    public function Original($Id)
+    {
+        $drug = Drug::find($Id);
+        return view('OriginalDrug',compact('drug'));
+    }
+
     //tidak dipakai
     // public function compareProduct($isShow,$isShow2, Request $request)
     // {   
@@ -73,8 +79,6 @@ class MedicineInfoController extends Controller
             //$drug1 = DB::table('Drugs')->where('Name', $firstQuery)->first();
         if($drug2 == null)
             $drug2 = Drug::where('Name','LIKE',$secondQuery)->first();
-
-        
 
         $toReturn = compact('drug1','drug2');
         //dd($toReturn);

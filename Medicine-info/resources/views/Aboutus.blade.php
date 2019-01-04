@@ -86,6 +86,8 @@
 									<li class="active"><a href="/Aboutus">About Us</a></li>
 
 									<li><a href="/ViewCompareDrug">Compare Drug</a></li>
+
+									<li><a href="/ScannDrug">Scan Original Drug</a></li>
 								</ul>
 							</div>
 						</div>

@@ -23,6 +23,10 @@ Route::get('/MedicineInfo', function(){
     return view('MedicineInfo');
 });
 
+Route::get('/ScannDrug', function(){
+    return view('ScannDrug');
+});
+
 //Jiwo,Ubah cara compare drug 19 des 2018
 Route::get('/ViewCompareDrug', function(){
 
@@ -38,6 +42,9 @@ Route::get('/MedicineInfo','MedicineInfoController@ShowData');
 Route::get('/doSearch','MedicineInfoController@searchProduct');
 
 Route::get('/doDetail/{id}','MedicineInfoController@ShowDetail');
+
+Route::get('/doOriginal/{id}','MedicineInfoController@Original');
+
 
 //pengganti doCompare
 Route::get('newCompare/','MedicineInfoController@newCompareProduct');
