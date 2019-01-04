@@ -324,9 +324,10 @@
       <h3>Useful Links</h3>
       <p>
        <ul class="colorlib-footer-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Medicine Info</a></li>
-        <li><a href="#">About Us</a></li>
+	  				<li><a href="/">Home</a></li>
+                    <li><a href="/MedicineInfo">Medicine Info</a></li>
+                    <li><a href="/Aboutus">About Us</a></li>
+                    <li><a href="/ViewCompareDrug">Compare Drug</a></li>
        </ul>
       </p>
      </div>
